@@ -1,0 +1,50 @@
+{
+    "name": "selectword",
+    "displayName": "selectWord",
+    "description": "Select the word under the cursor. Supports multi-cursor word selection.",
+    "version": "1.0.0",
+    "publisher": "craig-johnston",
+    "icon": "images/icon.png",
+    "license": "LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:craig-johnston/selectWord.git"
+    },
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.selectWord"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.selectWord",
+                "title": "selectWord"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.selectWord",
+                "key": "ctrl+alt+w",
+                "mac": "cmd+alt+w",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "eslint": "^4.11.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
