@@ -2,13 +2,16 @@
     "name": "selectword",
     "displayName": "selectWord",
     "description": "Select the word under the cursor. Supports multi-cursor word selection.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "craig-johnston",
     "icon": "images/icon.png",
     "license": "LICENSE",
     "repository": {
         "type": "git",
-        "url": "git@github.com:craig-johnston/selectWord.git"
+        "url": "https://github.com/craig-johnston/selectWord.git"
+    },
+    "bugs": {
+        "url": "https://github.com/craig-johnston/selectWord/issues"
     },
     "engines": {
         "vscode": "^1.29.0"
